@@ -12,7 +12,7 @@ export default class RecentlyPlayed extends Component {
     componentDidMount = async () => {
         try {
             let response = await fetch(
-              "https://striveschool-api.herokuapp.com/api/deezer/search?q=cher",
+              "https://striveschool-api.herokuapp.com/api/deezer/search?q=britneyspears",
               {}
             );
       
@@ -31,14 +31,14 @@ export default class RecentlyPlayed extends Component {
     
     render() {
         return (
-            <>
+            <div className="mb-5">
                 <h2 className="text-white mt-4">Recently Played</h2>
                 <Row>
                     {this.state.data && this.state.data.map(item => {
                         return <LargeCard title={item.title} image={item.album.cover} artist={item.artist.name} />
                     })}
                 </Row>
-            </>
+            </div>
         )
     }
 }
