@@ -8,7 +8,7 @@ export default class SmallCard extends Component {
     render() {
         return (
           <Col sm={6} md={4} lg={3}>
-            <Card className="card rounded border-0 text-white bg-dark mb-2" id="smallCard">
+            <Card className="card rounded border-0 text-white bg-dark mt-5" id="smallCard">
             <Row className="no-gutters">
                 <Col md={2}>
                     <Card.Img className="rounded-left" id="cardImg" variant="top" src="https://upload.wikimedia.org/wikipedia/en/2/27/ABBA_-_The_Album_%28Polar%29.jpg" />
@@ -16,8 +16,7 @@ export default class SmallCard extends Component {
             </Row>
             <Col md={10}>
                  <div className="card-body">
-                   <h5 id="fontSize" class="card-title ml-3">Liked Songs</h5>
-                   <h6 class="card-title ml-3"><FontAwesomeIcon icon={faPlayCircle} id="playHover"/></h6>
+                   <h5 id="smallFontSize" class="card-title ml-3">Liked Songs</h5>
                  </div>
             </Col>
             </Card>
