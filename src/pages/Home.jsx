@@ -1,10 +1,12 @@
 import React from "react";
+import SmallCard from "../components/SmallCard";
+import { Col } from "react-bootstrap";
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <Col md={10}>
+      <SmallCard />
+    </Col>
   );
 }
 

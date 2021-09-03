@@ -9,7 +9,7 @@ const Side = props => {
 
     return (
         <>
-            <Nav className="pl-3 col-md-2 d-none d-md-block sidebar"
+            <Nav className="pl-4 col-md-2 d-none d-md-block sidebar"
             activeKey="/home"
             onSelect={selectedKey => alert(`selected ${selectedKey}`)}
             >
@@ -18,7 +18,7 @@ const Side = props => {
                 src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png"
                 width="150"
                 height="auto"
-                className="d-inline-block align-top mt-3 mb-3"
+                className="d-inline-block align-top mt-3 ml-2 mb-3"
             />
                 <div className="sidebar-sticky"></div>
             <Nav.Item>

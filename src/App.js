@@ -7,11 +7,12 @@ import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from './pages/Home';
 import Album from './pages/Album';
 import Artist from './pages/Artist';
+import { Row } from 'react-bootstrap'
 
 function App() {
   return (
     <Router>
-    <div>
+    <Row>
       <MyNav title="My Book Store" color="light" />
       <Switch>
         <Route path="/" exact component={Home} />
@@ -19,7 +20,7 @@ function App() {
         <Route path="/artist" exact component={Artist} />
       </Switch>
       <MyFooter />
-    </div>
+    </Row>
     </Router>
   );
 }
