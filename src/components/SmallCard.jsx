@@ -1,22 +1,20 @@
 import React, { Component } from "react"
 import { Row, Col, Card } from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
 
 export default class SmallCard extends Component {
 
     render() {
         return (
           <Col sm={6} md={4} lg={3}>
-            <Card className="card rounded border-0 text-white bg-dark mt-5" id="smallCard">
+            <Card className="card rounded border-0 text-white bg-dark mt-3" id="smallCard">
             <Row className="no-gutters">
                 <Col md={2}>
-                    <Card.Img className="rounded-left" id="cardImg" variant="top" src="https://upload.wikimedia.org/wikipedia/en/2/27/ABBA_-_The_Album_%28Polar%29.jpg" />
+                    <Card.Img className="rounded-left" id="cardImg" variant="top" src={this.props.image} />
                 </Col>
             </Row>
             <Col md={10}>
                  <div className="card-body">
-                   <h5 id="smallFontSize" class="card-title ml-3">Liked Songs</h5>
+                   <h5 id="smallFontSize" class="card-title ml-3">{this.props.title}</h5>
                  </div>
             </Col>
             </Card>
