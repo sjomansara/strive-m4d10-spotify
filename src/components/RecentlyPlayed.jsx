@@ -32,7 +32,7 @@ export default class RecentlyPlayed extends Component {
     render() {
         return (
             <>
-                <h2 className="text-white mt-5">Recently Played</h2>
+                <h2 className="text-white mt-4">Recently Played</h2>
                 <Row>
                     {this.state.data && this.state.data.map(item => {
                         return <LargeCard title={item.title} image={item.album.cover} artist={item.artist.name} />
