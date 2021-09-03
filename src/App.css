@@ -7,6 +7,7 @@
   z-index: 100;
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
   background-color: black;
+  max-height: 1000px;
 }
 #sidebar-wrapper{
   min-height: 100vh !important;
@@ -34,4 +35,25 @@ body {
 #navText {
   color: white !important;
   font-size: smaller;
+}
+
+#tertiaryMenu {
+  overflow-y: scroll;
+  max-height: 400px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
 }

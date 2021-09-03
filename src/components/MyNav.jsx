@@ -2,7 +2,7 @@ import React from "react";
 import {Nav} from "react-bootstrap";
 import { withRouter } from "react-router";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faMicrophoneAlt, faPlusSquare, faSearch, faStream } from '@fortawesome/free-solid-svg-icons'
+import { faHeart, faHome, faMicrophoneAlt, faPlusSquare, faSearch, faStream } from '@fortawesome/free-solid-svg-icons'
 
 const Side = props => {
    
@@ -37,6 +37,72 @@ const Side = props => {
             <Nav.Item>
                 <Nav.Link id="navText" eventKey="disabled"><FontAwesomeIcon icon={faPlusSquare} /> Create Playlist</Nav.Link>
             </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled"><FontAwesomeIcon icon={faHeart} /> Liked Songs</Nav.Link>
+            </Nav.Item>
+            <br/>
+            <div id="tertiaryMenu">
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">Dinner With Friends</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">Your Top Songs 2020</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">This is Madonna</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">This is Britney Spears</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">Summer Hits</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">This is Madonna</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">Discover Weekly</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">Release Radar</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">Daily Mix 3</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">Time Capsule</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">Time Capsule</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">Daily Mix 5</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">Daily Mix 1</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">This is Harry Styles</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">This is Queen</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">This is Fleetwood Mac</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">Soultronic</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">00s Party</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">Soulful Day</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link id="navText" eventKey="disabled">Oyster</Nav.Link>
+            </Nav.Item>
+            </div>
             </Nav>
         </>
         );
