@@ -57,3 +57,124 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #888;
 }
+
+.footer-container {
+  color: lightgray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mediaPlayerFooter {
+  margin-top: 1rem;
+  background-color: #181818;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #181818;
+  height: 5rem;
+  z-index: 1000 !important;
+}
+
+.mediaPlayerFooter .leftFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mediaPlayerFooter .rightFooter {
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
+
+.mediaPlayerFooter .middleFooter .col-12 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mediaPlayerFooter img {
+  height: 4rem;
+  width: 4rem;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  top: 0.5rem;
+}
+
+.mediaPlayerFooter .card {
+  background-color: #181818;
+}
+
+.currentPlayed {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ArtistAndSong {
+  display: block;
+}
+
+#footerButton {
+  margin-left: 0.3rem;
+  background-color: transparent;
+  border: 0;
+}
+
+progress::-webkit-progress-value {
+  background: rgb(131, 129, 129);
+  border-radius: 100px;
+}
+
+progress::-moz-progress-bar {
+  background: rgb(255, 255, 255);
+  border-radius: 100px;
+}
+
+progress::-webkit-progress-value {
+  background: rgb(255, 255, 255);
+  border-radius: 100px;
+}
+
+progress::-webkit-progress-bar {
+  background: rgb(131, 129, 129);
+  border-radius: 100px;
+}
+
+progress {
+  margin-top: 10px;
+  display: inline-block;
+  width: 30%;
+  max-height: 5px;
+  left: 490px;
+  top: 60px;
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+}
+
+.rightFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.showsToTry {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#aviciiSize {
+  margin-bottom: 1rem;
+}

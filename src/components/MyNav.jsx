@@ -58,7 +58,7 @@ const Side = props => {
                 <Nav.Link id="navText" eventKey="disabled">Summer Hits</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link id="navText" eventKey="disabled">This is Madonna</Nav.Link>
+                <Nav.Link id="navText" eventKey="disabled">This is ABBA</Nav.Link>
             </Nav.Item>
             <Nav.Item>
                 <Nav.Link id="navText" eventKey="disabled">Discover Weekly</Nav.Link>
@@ -68,9 +68,6 @@ const Side = props => {
             </Nav.Item>
             <Nav.Item>
                 <Nav.Link id="navText" eventKey="disabled">Daily Mix 3</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link id="navText" eventKey="disabled">Time Capsule</Nav.Link>
             </Nav.Item>
             <Nav.Item>
                 <Nav.Link id="navText" eventKey="disabled">Time Capsule</Nav.Link>
