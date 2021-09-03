@@ -1,8 +1,8 @@
 import { Component } from "react"
-import SmallCard from "./SmallCard";
+import LargeCard from "./LargeCard";
 import { Row } from "react-bootstrap"
 
-export default class GoodMorning extends Component {
+export default class RecentlyPlayed extends Component {
     constructor(props) {
         super(props)
 
@@ -12,14 +12,14 @@ export default class GoodMorning extends Component {
     componentDidMount = async () => {
         try {
             let response = await fetch(
-              "https://striveschool-api.herokuapp.com/api/deezer/search?q=Madonna",
+              "https://striveschool-api.herokuapp.com/api/deezer/search?q=cher",
               {}
             );
       
             if (response.ok) {
               let jsonResponse = await response.json();
-              let slicedResponse = jsonResponse.data.slice(-8)
-              this.setState({data: slicedResponse}, () => {console.log(this.state.data)})
+              let slicedResponse = jsonResponse.data.slice(-12)
+              this.setState({data: slicedResponse})
               // this.setState({ movies: moviesLimitedToSix });
             } else {
               console.log("error");
@@ -32,10 +32,10 @@ export default class GoodMorning extends Component {
     render() {
         return (
             <>
-                <h2 className="text-white mt-5">Good Morning</h2>
+                <h2 className="text-white mt-5">Recently Played</h2>
                 <Row>
                     {this.state.data && this.state.data.map(item => {
-                        return <SmallCard title={item.title} image={item.album.cover} />
+                        return <LargeCard title={item.title} image={item.album.cover} artist={item.artist.name} />
                     })}
                 </Row>
             </>
