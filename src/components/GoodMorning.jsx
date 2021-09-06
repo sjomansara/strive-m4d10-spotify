@@ -20,7 +20,6 @@ export default class GoodMorning extends Component {
               let jsonResponse = await response.json();
               let slicedResponse = jsonResponse.data.slice(-8)
               this.setState({data: slicedResponse}, () => {console.log(this.state.data)})
-              // this.setState({ movies: moviesLimitedToSix });
             } else {
               console.log("error");
             }

@@ -20,7 +20,6 @@ export default class RecentlyPlayed extends Component {
               let jsonResponse = await response.json();
               let slicedResponse = jsonResponse.data.slice(-12)
               this.setState({data: slicedResponse})
-              // this.setState({ movies: moviesLimitedToSix });
             } else {
               console.log("error");
             }
