@@ -12,7 +12,7 @@ export default class RecentlyPlayed extends Component {
     componentDidMount = async () => {
         try {
             let response = await fetch(
-              "https://striveschool-api.herokuapp.com/api/deezer/search?q=britneyspears",
+              "https://striveschool-api.herokuapp.com/api/deezer/search?q=britney_spears",
               {}
             );
       
@@ -31,7 +31,7 @@ export default class RecentlyPlayed extends Component {
     render() {
         return (
             <div className="mb-5">
-                <h2 className="text-white mt-4">Recently Played</h2>
+                <h2 className="text-white mt-4">Recently played</h2>
                 <Row>
                     {this.state.data && this.state.data.map(item => {
                         return <LargeCard title={item.title} image={item.album.cover} artist={item.artist.name} />

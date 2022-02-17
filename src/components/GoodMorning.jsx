@@ -12,7 +12,7 @@ export default class GoodMorning extends Component {
     componentDidMount = async () => {
         try {
             let response = await fetch(
-              "https://striveschool-api.herokuapp.com/api/deezer/search?q=Madonna",
+              "https://striveschool-api.herokuapp.com/api/deezer/search?q=kylie_minogue",
               {}
             );
       
@@ -31,7 +31,7 @@ export default class GoodMorning extends Component {
     render() {
         return (
             <>
-                <h2 className="text-white mt-5">Good Morning</h2>
+                <h2 className="text-white mt-5">Good morning</h2>
                 <Row>
                     {this.state.data && this.state.data.map(item => {
                         return <SmallCard title={item.title} image={item.album.cover} />
